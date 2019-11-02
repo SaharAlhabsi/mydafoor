@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DAFOOR-Centers</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<style type="text/css">
+  .rating-stars a {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNBN0E5QUMiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjMxLjg2Niw2LjYxOCA0MC4wOSwyMy4yODEgNTguNDc5LDI1Ljk1MyA0NS4xNzIsMzguOTIzIDQ4LjMxMyw1Ny4yMzkgMzEuODY2LDQ4LjU5MiAxNS40MTgsNTcuMjM5IDE4LjU2LDM4LjkyMyA1LjI1MywyNS45NTMgMjMuNjQyLDIzLjI4MSAiLz48L3N2Zz4=");
+	outline: none;
+  }
+  .rating-stars a.hover {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMHB4IiB5PSIwcHgiCiAgIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiM1MUFFQ0QiIHN0cm9rZT0iIzUxQUVDRCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMzEuODY2LDYuNjE4IDQwLjA5LDIzLjI4MSA1OC40NzksMjUuOTUzIDQ1LjE3MiwzOC45MjMgNDguMzEzLDU3LjIzOSAzMS44NjYsNDguNTkyIDE1LjQxOCw1Ny4yMzkgMTguNTYsMzguOTIzIDUuMjUzLDI1Ljk1MyAyMy42NDIsMjMuMjgxICIvPjwvc3ZnPgo=");
+  }
+  .rating-stars a.selected {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkVDMjBGIiBzdHJva2U9IiNGRUMyMEYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjMxLjg2Niw2LjYxOCA0MC4wOSwyMy4yODEgNTguNDc5LDI1Ljk1MyA0NS4xNzIsMzguOTIzIDQ4LjMxMyw1Ny4yMzkgMzEuODY2LDQ4LjU5MiAxNS40MTgsNTcuMjM5IDE4LjU2LDM4LjkyMyA1LjI1MywyNS45NTMgMjMuNjQyLDIzLjI4MSAiLz48L3N2Zz4=");
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+        <div class="wsite-map" len="464">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7388.574834514163!2d57.53104931624404!3d22.90797998501116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8efa0b0659d2bf%3A0xf7de9c66e5e72ea7!2z2KfZhNmC2LHZitipINin2YTZh9mG2K_Ys9mK2Kkg2YbYstmI2Yk!5e1!3m2!1sen!2som!4v1563254587453!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="81"><font size="4" len="59"><span><a href="/nizwa.html" lang="en">القرية الهندسية نزوى</a></span></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="59"><font lang="en">شارع نزوى-عبري، بالقرب من فندق الديار</font><br len="0"><font lang="en">​للتواصل: 96784886</font></div>
+
+    </div>
+
+
+    <div class="col">
+        <div class="wsite-map" len="475">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7307.370346044571!2d56.72399121625776!3d24.35505108429458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8b44d321f0adb7%3A0xd1aa085a54b8b39!2sEngineering+Village+Sohar!5e1!3m2!1sen!2som!4v1563254657072!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="71"><font size="4" len="49"><span><a href="/" lang="en">القرية الهندسية صحار</a></span></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="60"><font lang="en">شارع الوقيبة، داخل صحار بلازا - السينما</font><br len="0"><font lang="en">للتواصل: 94552147</font></div>
+    </div>
+    </div>
+      <div class="row align-items-center">
+    <div class="col">
+        <div class="wsite-" len="474">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8131.680032645179!2d58.24759560184005!3d23.622852233009702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8dfd9e88fb6fab%3A0x4ebf682885e95e74!2sEngineering+Village!5e1!3m2!1sen!2som!4v1563254441073!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="69"><font size="4" len="47"><a href="/muscat.html" lang="en">القرية الهندسية مسقط</a></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="52"><font lang="en">المزن مول، بالقرب من شارع الموج</font><br len="0"><font lang="en">للتواصل: 96994811</font></div>
+
+    </div>
+
+
+    <div class="col">
+        <div class="wsite-" len="474">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.665668518954!2d58.14049201625039!3d23.593938684666796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8de25615fb3b51%3A0xc01faef31ec66fc6!2z2YXZg9iq2KjYqSDYsdmI2KfYstmG!5e1!3m2!1sen!2som!4v1563254342926!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="69"><font size="4" len="47"><a href="/muscat.html" lang="en"> مكتبة روازن</a></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+    </div>
+     </div>
+     <div class="row align-items-center">
+    <div class="col">
+        <div class="wsite-map" len="464">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26207.440380354547!2d58.17643881035007!3d23.606897361583016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee3b80d94d6a2a5!2sExhibition+Hall!5e0!3m2!1sen!2sus!4v1563255219424!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="81"><font size="4" len="59"><span><a href="/nizwa.html" lang="en">القرية الهندسية - فرع الجامعة</a></span></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="59"><font lang="en">جامعة السلطان قابوس، مركز خدمات الطلاب</font><br len="0"><font lang="en"> 95677800: للتواصل</font></div>
+
+    </div>
+    <div class="col">
+        <div class="wsite-map" len="475">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.936823525854!2d58.36490271624995!3d23.589099084669236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e001f3f572df1%3A0x48fc3e1f2086c297!2sAl+Rud&#39;ha+Al+Azaiba!5e1!3m2!1sen!2som!4v1563254934410!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="71"><font size="4" len="49"><span><a href="/" lang="en">مركز الردهه</a></span></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="60"><font lang="en">فرع العذيبة</font><br len="0"><font lang="en">mydafoor@gmail.com : للتواصل </font></div>
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">
+        <div class="wsite-" len="474">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117591.24565972073!2d58.25086057254557!3d23.615573671875417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8dfd241fce8b91%3A0x5282134701f83b2f!2sAl+Rud&#39;ha+Al+Khoudh!5e1!3m2!1sen!2som!4v1563255071390!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="69"><font size="4" len="47"><a href="/muscat.html" lang="en">مركز الردهه</a></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="52"><font lang="en">فرع الخوض</font><br len="0"><font lang="en"> mydafoor@gmail.com:للتواصل</font></div>
+    </div>
+    <div class="col">
+        <div class="wsite-" len="474">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7352.527696252924!2d58.37847601497839!3d23.590784684668233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffdd7d1cb8f7%3A0x63fa20a6775a82bb!2zQmFzdGFoIE1hamFuINio2LPYt9ipINmF2KzYp9mG!5e1!3m2!1sen!2som!4v1563254173017!5m2!1sen!2som" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>                    </div>
+
+        <h2 class="wsite-content-title" style="text-align:center;" len="69"><font size="4" len="47"><a href="/muscat.html" lang="en">بسطة مجان</a></font></h2>
+
+        <div len="170"><div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div>
+        <hr class="styled-hr" style="width:100%;" len="0">
+        <div style="height: 0px; overflow: hidden; width: 100%;" len="0"></div></div>
+
+        <div class="paragraph" style="text-align:center;" len="52"><font lang="en"> </font><br len="0"><font lang="en"> mydafoor@gmail.com:للتواصل</font></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+    </body>
+</html>
